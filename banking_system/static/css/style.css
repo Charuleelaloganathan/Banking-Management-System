@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/static/images/banking_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.page-hero, .hero, .main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+body > .content {
+  display: block;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 92%;
+    padding: 16px;
+    width: 92%;
+  }
+
+  .page-hero, .hero, .main-wrapper {
+    min-height: 50vh;
+    padding: 24px 0;
+  }
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+.navbar-logo {
+  height: 75px;     
+  width: 100px;      
+  max-height: none;  
+}
